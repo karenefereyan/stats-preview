@@ -24,18 +24,28 @@ a{
 
 body{
     background-color: var(--main-bg);
+    font-family: 'Lexend Deca', sans-serif;
     color: #fff;
-    font-family: 'Inter', 'Lexend Deca', sans-serif;
     font-size: 15px;
 }
 
-img{
-    max-width: 100%;
+.content-container{
+    width: 80%;
+    margin: 2.5em auto;
+    display: flex;
+}
+ 
+.text-content{
+    max-width: 50%;
     height: auto;
 }
 
 ul{
     list-style: none;
+    margin: 0;
+}
+
+h1, p{
     margin: 0;
 }
 
@@ -47,18 +57,10 @@ ul{
     display: none;
 }
 
-.content-container{
-    width: 80%;
-    margin: 4em auto;
-    display: flex;
-}
-
 .text-content{
     background-color:var(--card-bg);
     padding: 50px;
     border-radius: 20px 0 0 20px;
-    width: 100%;
-    height: 400px;
 }
 
 .text-content ul{
@@ -72,20 +74,22 @@ ul{
     flex-direction: column;
     justify-content: center;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 10px;
     color: var(--main-paragraph-color);
+    font-weight: 400;
 }
 
 .text-content p{
     color:var(--main-paragraph-color);
-    line-height: 1.75em;
-    font-size: 1em;
+    line-height: 1.5em;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
 }
 
 .stats-heading{
     color: var(--main-heading-stats-color);
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 7px;
 }
 
@@ -95,15 +99,14 @@ ul{
 }
 
 .image-content{
-    width: 100%;
-    height: 400px;
+    max-width: 50%;
     position: relative;
 }
 
 .image-content img{
-   height: 100%;
-   width: 100%;
-   border-radius: 0 20px 20px 0;
+    max-width: 100%;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
 }
 
 .overlay{
@@ -112,12 +115,14 @@ ul{
     left: 0px;
     width: 100%;
     height: 100%;
+    border-radius: 0 20px 20px 0;
     background-color: var(--accent);
     mix-blend-mode:multiply;
 }
 
-.attribution p{
-    text-align: center;
+.attribution{
+   text-align: center;
+   margin-bottom: 1em;
 }
 
 @media only screen and (max-width:768px){
@@ -134,10 +139,14 @@ ul{
     }
 
     .text-content{
-        height: 100%;
+        max-width: 100%;
         text-align: center;
-        padding: 25px;
+        padding: 50px 20px;
         border-radius: 0 0 20px 20px;
+    }
+
+    .text-content p{
+        font-size: 1em;
     }
 
     .text-content ul{
@@ -146,18 +155,18 @@ ul{
     }
     
     .text-content li{
-        margin-bottom: 3em;
+        margin-bottom: 2.5em;
     }
 
     .image-content{
-        height: auto;
-    }
-    .image-content img{
-        height: 100%;
-        border-radius: 20px 20px 0 0;
+        max-width: 100%;
     }
 
-    .attribution p{
-        margin: 2em;
+    .image-content img{
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+    .overlay{
+        border-radius: 20px 20px 0 0;
     }
 }
