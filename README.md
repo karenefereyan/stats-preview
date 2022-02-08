@@ -1,5 +1,6 @@
 # Frontend Mentor - Stats preview card component
 
+<<<<<<< HEAD
 ## Welcome! 👋
 ### View Live Site here:
 ![](./images/thumbnail.png)
@@ -7,6 +8,11 @@
 ![Design preview for the Stats preview card component coding challenge](./design/desktop-preview.jpg)
 
 
+=======
+![Design preview for the Stats preview card component coding challenge](./design/desktop-preview.jpg)
+
+## Welcome! 👋
+>>>>>>> a5809bc (Adding updated files from local system)
 
 Thanks for checking out this front-end coding challenge.
 

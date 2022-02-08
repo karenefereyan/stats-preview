@@ -1,49 +1,37 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <meta name="author" content="Karen Simsisola Efereyan">
-  <meta name = "description" content = "Stats preview card component is a simple
-  challenge from frontendmentor. It aims to test my knowledge of responsiveness and
-  effective layout arrangement for building websites and web applications">
-  <meta name = "keywords" content = "stats preview component, frontendmentor stats preview
-  challenge, frontendmentor challenge, web design, web development, html site, 
-  css site, karen efereyan frontendmentor, frontendmentor challenge karen efereyan">
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
   <title>Frontend Mentor | Stats preview card component</title>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
 
-    <div class="content-container">
-        <div class="text-content">
-            <h1 class="animate__animated animate__backInDown"> Get <span class="highlight">insights</span> that help your business grow.</h1>
-            <p class="animate__animated animate__bounce">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-                experience, and overall efficiency.
-            </p>
-            <ul>
-                <li><span class="stats-heading">10k+</span>companies</li>
-                <li><span class="stats-heading">314</span> templates</li>
-                <li><span class="stats-heading">12m+ </span>queries</li>
-            </ul>
-        </div>
-        <div class="image-content">
-            <img src="./images/image-header-desktop.jpg" alt="desktop heaedr image" class="on-desktop" />
-            <img src="./images/image-header-mobile.jpg" alt="mbile header image" class="on-mobile" />
-            <div class="overlay"></div>
-        </div>
+  <section class="container">
+    <div class="card-image">
+      <div class="overlay">
+      </div>
     </div>
-  
-    <div class="attribution">
+
+    <div class="card-content">
+      <h1>Get <span class="insights">insights </span>that help your business grow.</h1>
+      <p> Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+        experience, and overall efficiency.</p>
+        <ul>
+          <li><span class="stats">10k+</span> companies</li>
+          <li><span class="stats">314</span>templates</li>
+          <li><span class="stats">12m+</span>queries</li>
+        </ul>
+    </div>
+  </section>
+
+  <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-            Coded by <a href="#">Karen Simisola Efereyan</a>.
-       
-    </div>
+    Coded by <a href="#">Efereyan Karen</a>.
+  </div>
 </body>
 </html>
